@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How To Tech - Home</title>
+<link rel="stylesheet" type="text/css" href="HTT_CSS.css">
+    <link rel="icon" type="image/x-icon" href="Images/How-To-Tech_Logo_Final.png" />
+</head>
+
+<body>
+<div id="main">
+<header><img src="Images/How-To-Tech_Logo_Final.png" width="145" height="146" alt=""/><h1>HOW TO TECH</h1></header>
+	<nav>
+        <ul>
+            <li><a href="#">Tutorials</a>
+                <ul>
+                    <li><a href="Home.html">Programming</a></li>
+                    <li><a href="Home.html">Media Arts</a></li>
+                    <li><a href="Home.html">Video Prod.</a></li>
+                    <li><a href="Home.html">3D Design</a></li>
+                    <li><a href="Home.html">Video Games</a></li>
+                </ul><li>
+                <a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="scrollable">
+    <section>
+        <form name="ContactForm" action="contact_form.php" method="post">
+            <p>
+            <label>Full Name: &nbsp; &nbsp;&nbsp;</label><input type="text" name="fullName" class="input_text" placeholder="Insert your full name!" required>
+            </p>
+            <p>
+			<label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input type="email" name="emailAddress" class="input_text" placeholder="Insert your email here!" required>
+            </p>
+            <p>
+            <label>Phone: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input type="number" name="phoneNumber" class="input_text" placeholder="Insert your phone here!">
+            </p>
+            <p>
+                <label>Comments: &nbsp;</label><textarea name="comments" class="input_text" placeholder="Please insert any comments or suggestions here"></textarea>
+            </p>
+            <p>
+            <input type="submit" class="submit_button">
+            </p>
+            <p class="extra_input">Don't fill this in ever!
+            <label>Address: </label><input type="text" name="address" class="input_text">
+            </p>
+            </form>    
+    </section>
+    </div>
+    <footer>
+        <p>Copyright 2016</p>    
+    </footer>
+</div>
+</body>
+</html>

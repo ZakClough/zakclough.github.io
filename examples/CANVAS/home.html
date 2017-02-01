@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+	<!--<style>
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+    canvas { background:url(companioncube.png) }
+    </style>-->
+<body>
+	<canvas width="1400" height="875" style="border:solid 5px black" id="myCanvas">
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+            
+			var grd=ctx.createLinearGradient(0,0,300,0);
+            grd.addColorStop(0,"rgb(56,13,70)");
+            grd.addColorStop(1,"black");
+            
+            //Background
+            ctx.beginPath();
+            ctx.fillStyle = grd;
+            ctx.fillRect(0,0,1400,875);
+            ctx.closePath();
+            
+			//Head
+			ctx.beginPath();
+			ctx.fillStyle="rgb(128,128,128)";
+            ctx.strokeStyle="lightgrey";
+			ctx.arc(1094,318,109,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			
+			//hand
+			ctx.beginPath();
+			ctx.arc(743,669,52,0,2*Math.PI);
+			ctx.fill();
+			ctx.closePath();
+			
+			//Body
+			ctx.beginPath();
+            ctx.moveTo(885, 541);
+            ctx.bezierCurveTo(885, 541, 902, 505, 1010, 463);
+            ctx.lineTo(1206, 463);
+            ctx.bezierCurveTo(1206, 463, 1240, 460, 1251, 495);
+            ctx.lineTo(1318, 675);
+            ctx.bezierCurveTo(1318, 675, 1338, 737, 1284, 750);
+            ctx.lineTo(1135, 806);
+            ctx.bezierCurveTo(1135, 806, 1100, 820, 1089, 785);
+            ctx.bezierCurveTo(1089, 785, 1076, 751, 1112, 737);
+            ctx.lineTo(1241, 685);
+            ctx.lineTo(1206, 604);
+            ctx.lineTo(1202,682);
+            ctx.lineTo(1090, 725);
+            ctx.lineTo(1090, 578);
+            ctx.lineTo(1057, 541);
+            ctx.lineTo(885, 541);
+			ctx.lineWidth = 3;
+            ctx.fill();
+            ctx.closePath();
+            
+            //Heart
+			ctx.beginPath();
+			ctx.lineJoin="round";
+			ctx.bezierCurveTo(759, 425, 800, 418, 856, 447);
+            ctx.bezierCurveTo(759, 426, 725, 430, 706, 381);
+            ctx.bezierCurveTo(706, 381, 695, 350, 716, 319);
+            ctx.bezierCurveTo(716, 319, 735, 293, 790, 321);
+            ctx.bezierCurveTo(790, 321, 800, 263, 833, 260);
+            ctx.bezierCurveTo(833, 260, 870, 258, 886, 284);
+            ctx.bezierCurveTo(886, 284, 920, 318, 879, 372);
+            ctx.bezierCurveTo(879, 372, 850, 418, 856, 447);
+			ctx.lineWidth = 3;
+			ctx.stroke();
+            ctx.fill();
+			ctx.closePath();
+            
+            //Text
+			ctx.shadowColor = "black";
+			ctx.shadowOffsetX = 6; 
+			ctx.shadowOffsetY = 8; 
+			ctx.shadowBlur = 7;
+            ctx.fillStyle = "white";
+            ctx.font = "italic 70px Tahoma";
+            ctx.textAlign="center"; 
+            ctx.fillText("Aperture Science",300,437.5);
+            
+            //Cube
+            //Outside Corners
+			ctx.beginPath();
+            ctx.globalAlpha=0.4;
+			ctx.moveTo(980,558);
+			ctx.lineTo(1050,558);
+			ctx.lineTo(1074,584);
+			ctx.lineTo(1074,654);
+			ctx.lineTo(1015,654);
+			ctx.lineTo(980,618);
+            ctx.lineTo(980,558);
+			
+			ctx.moveTo(903,558);
+			ctx.lineTo(903,616);
+			ctx.lineTo(866,651);
+			ctx.lineTo(807,651);
+			ctx.lineTo(807,581);
+			ctx.lineTo(834,558);
+            ctx.lineTo(903,558);
+			
+			ctx.moveTo(808,726);
+			ctx.lineTo(866,726);
+			ctx.lineTo(901,762);
+			ctx.lineTo(901,821);
+			ctx.lineTo(831,821);
+			ctx.lineTo(808,795);
+            ctx.lineTo(808,726);
+			
+			ctx.moveTo(978,820);
+			ctx.lineTo(978,762);
+			ctx.lineTo(1015,726);
+			ctx.lineTo(1074,726);
+			ctx.lineTo(1074,797);
+			ctx.lineTo(1048,820);
+            ctx.lineTo(978,820);
+            
+            //Sides
+            ctx.rect(1018,667,30,44);
+            ctx.rect(833,667,30,44);
+            ctx.rect(919,580,44,30);
+            ctx.rect(919,769,44,30);
+            
+            
+            //Inside Corners
+            ctx.moveTo(876,678);
+			ctx.lineTo(876,660);
+			ctx.lineTo(912,625);
+			ctx.lineTo(930,625);
+			ctx.lineTo(930,650);
+            ctx.lineTo(901,678);
+            ctx.lineTo(876,678);
+            
+            ctx.moveTo(877,700);
+			ctx.lineTo(901,700);
+			ctx.lineTo(930,730);
+			ctx.lineTo(930,754);
+			ctx.lineTo(911,754);
+            ctx.lineTo(877,719);
+            ctx.lineTo(877,700);
+            
+            ctx.moveTo(952,728);
+			ctx.lineTo(981,700);
+			ctx.lineTo(1005,700);
+			ctx.lineTo(1005,718);
+			ctx.lineTo(970,753);
+            ctx.lineTo(952,753);
+            ctx.lineTo(952,728);
+            
+            ctx.moveTo(951,625);
+			ctx.lineTo(969,625);
+			ctx.lineTo(1005,661);
+			ctx.lineTo(1005,679);
+			ctx.lineTo(979,679);
+            ctx.lineTo(951,650);
+            ctx.lineTo(951,625);
+			ctx.fill();
+            ctx.lineWidth = 3;
+            ctx.stroke();
+			ctx.closePath();
+            
+		</script>
+	</canvas>
+</body>
+</html>
