@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VRBO Photos</title>
+<link rel="stylesheet" type="text/css" href="VRBO_Styles.css">
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<link rel="icon" type="image/x-icon" href="Images/favicon.jpg" />
+</head>
+
+<body>
+<div id="main">
+<header><h1></h1></header><!-- #BeginLibraryItem "/Library/Nav.lbi" -->
+<nav>
+	<ul>
+    	<li><a href="VRBO_Home.html">Home</a></li><li>
+        <a href="VRBO_Rates.html">Rates</a></li><li>
+        <a href="VRBO_Location.html">Location</a></li><li>
+        <a href="VRBO_ManagerInfo.html">About</a></li><li>
+        <a href="VRBO_Photos.html">Photos</a></li>
+    </ul>
+</nav>    <!-- #EndLibraryItem --><section>
+    <iframe width="600" height="430" src="//www.cincopa.com/media-platform/iframe.aspx?fid=A4GA5Kt1hhjG" frameborder="0" allowfullscreen scrolling="no"></iframe>
+	</section>
+    <aside>
+    <script language="JavaScript">
+var now = new Date(); 
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+function fourdigits(number) {
+    return (number < 1000) ? number + 1900 : number;
+                                }
+today =  days[now.getDay()] + ", " +
+         months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+document.write(today);
+</script>
+<h4><strong>Want to stay at out condo? Fill out the form below!</strong></h4>
+<div>
+<form name="ContactForm" action="VRBO_form.php" method="post">
+            <p>
+            <label>Full Name: &nbsp; &nbsp;&nbsp;</label><input type="text" name="fullName" class="input_text" placeholder="Insert your full name!" required>
+            </p>
+            <p>
+			<label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input type="email" name="emailAddress" class="input_text" placeholder="Insert your email here!" required>
+            </p>
+            <p>
+            <label>Day Arriving: </label><input type="date" name="dayArrive" class="input_text" required>
+            </p>
+            <p>
+            <label>Day Leaving: </label><input type="date" name="dayLeave" class="input_text" required>
+            </p>
+            <p>
+            <label>Phone: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input type="number" name="phoneNumber" class="input_text" placeholder="Insert your phone here!">
+            </p>
+            <p>
+            <input type="submit" class="submit_button">
+            </p>
+            <p class="extra_input">Don't fill this in ever!
+            <label>Address: </label><input type="text" name="address" class="input_text">
+            </p>
+  </form>
+            </div>
+    </aside><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<footer>
+	<span>&copy; Copyright 2015</span><p>Contact Us at: 1-(787) 667-8415</p>
+</footer><!-- #EndLibraryItem --></div>
+</body>
+</html>

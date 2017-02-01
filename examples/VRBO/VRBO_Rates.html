@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VRBO Rates</title>
+<link rel="stylesheet" type="text/css" href="VRBO_Styles.css">
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<link rel="icon" type="image/x-icon" href="Images/favicon.jpg" />
+</head>
+
+<body>
+<div id="main">
+<header><h1></h1></header><!-- #BeginLibraryItem "/Library/Nav.lbi" -->
+<nav>
+	<ul>
+    	<li><a href="VRBO_Home.html">Home</a></li><li>
+        <a href="VRBO_Rates.html">Rates</a></li><li>
+        <a href="VRBO_Location.html">Location</a></li><li>
+        <a href="VRBO_ManagerInfo.html">About</a></li><li>
+        <a href="VRBO_Photos.html">Photos</a></li>
+    </ul>
+</nav>    <!-- #EndLibraryItem --><section>
+    <table border="1">
+  <tbody>
+    <tr>
+      <th scope="col">Dates</th>
+      <th scope="col">Nightly</th>
+      <th scope="col">Weekend Night</th>
+      <th scope="col">Weekly</th>
+      <th scope="col">Monthly</th>
+      <th scope="col">Event</th>
+    </tr>
+    <tr>
+      <th scope="row">Early Winter (Dec 9 - Dec 18, 2015 3 night min stay)</th>
+      <td>$210</td>
+      <td>&nbsp;</td>
+      <td>$1,260</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Winter 2015-2016 (Dec 19 - Apr 20, 2016 3 night min stay)</th>
+      <td>$285</td>
+      <td>&nbsp;</td>
+      <td>$1,710</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Spring 2016 (Apr 21 - May 18, 2016 3 night min stay)</th>
+      <td>$235</td>
+      <td>&nbsp;</td>
+      <td>$1,410</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Summer 2016 (Apr 21 - May 18, 2016 3 night min stay)</th>
+      <td>$195</td>
+      <td>&nbsp;</td>
+      <td>$1,170</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Late Summer 2016 (Aug 31 - Sep 29, 2016 3 night min stay</th>
+      <td>$175</td>
+      <td>&nbsp;</td>
+      <td>$1,050</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+    </section>
+    <article>
+    	<strong>Additional information about rental rates</strong>
+      <p>Fees:</p>
+        <p>Cleaning ................................................. $75 + tax</p>
+        <p>Refundable Damage Deposit .......................... $300</p>
+        <p>Tax Rate ........................................................... 7%</p><br />
+        <p>Notes:</p>
+        
+        <p>Cancellation Policy:</p>
+        <p>More than 60 days before arrival: full refund.</p>
+        <p>Less than 60 days, more than 30 days before arrival: all money refunded except deposit.</p>
+        <p>Less than 30 days before arrival: we make effort to re-book the dates. If unable to re-book we refund deposit and cleaning fees. If able to re-book you forfeit deposit and difference in rental rates, we refund the balance.</p>
+        <p>Payment accepted online: VISA, MasterCard, American Express, Discover, PayPal.</p>
+        <p>Deposit holds the reservation.</p>
+        <p>Pay 50% 60 days prior to arrival.</p>
+        <p>Pay balance 30 days prior to arrival.</p>
+        <p>See some empty dates in the next 30 days?</p>
+        <p>Do they fit your schedule?</p>
+        <p>Give us a call and make us a reasonable offer, you might be pleasantly surprised!</p>
+    </article>
+	<aside>
+    <script language="JavaScript">
+var now = new Date(); 
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+function fourdigits(number) {
+    return (number < 1000) ? number + 1900 : number;
+                                }
+today =  days[now.getDay()] + ", " +
+         months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+document.write(today);
+</script>
+<h4><strong>Want to stay at out condo? Fill out the form below!</strong></h4>
+<div>
+<form name="ContactForm" action="VRBO_form.php" method="post">
+            <p>
+            <label>Full Name: &nbsp; &nbsp;&nbsp;</label><input type="text" name="fullName" class="input_text" placeholder="Insert your full name!" required>
+            </p>
+            <p>
+			<label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input type="email" name="emailAddress" class="input_text" placeholder="Insert your email here!" required>
+            </p>
+            <p>
+            <label>Day Arriving: </label><input type="date" name="dayArrive" class="input_text" required>
+            </p>
+            <p>
+            <label>Day Leaving: </label><input type="date" name="dayLeave" class="input_text" required>
+            </p>
+            <p>
+            <label>Phone: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label><input type="number" name="phoneNumber" class="input_text" placeholder="Insert your phone here!">
+            </p>
+            <p>
+            <input type="submit" class="submit_button">
+            </p>
+            <p class="extra_input">Don't fill this in ever!
+            <label>Address: </label><input type="text" name="address" class="input_text">
+            </p>
+            </form>
+            </div>
+    </aside><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<footer>
+	<span>&copy; Copyright 2015</span><p>Contact Us at: 1-(787) 667-8415</p>
+</footer><!-- #EndLibraryItem --></div>
+</body>
+</html>

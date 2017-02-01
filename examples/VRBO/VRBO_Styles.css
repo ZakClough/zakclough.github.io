@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, ul, li, main, nav, a, header, h1, p {
+	color:white;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+header, h1, p, li, article, aside, footer, section {
+	color:black;
+}
+
+#main {
+	width:1000px;
+	margin:auto;
+	background-color:#606CAA;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+header {
+	background-color:#0073FC;
+	background-image:url(Images/VRBO_logo.png);
+	width:100%;
+	height:150px;
+}
+header h1 {
+	text-align:center;
+	font-family: 'Audiowide', cursive;
+	font-size:3.5em;
+	padding-top:20px;
+	color:#090C1E;
+	letter-spacing:5px;
+}
+/* Nav Begin*/
+nav {
+	background-color:#F8E87D;
+	width:100%;
+	border-top: black solid 3px;
+	border-bottom: black solid 3px;
+}
+
+nav a {
+	display:block;
+	height:25px;
+	padding-top:5px;
+}
+
+li {
+	width:200px;
+	display:inline-block;
+	background-color:#F8E87D;
+	text-align:center;
+}
+
+li:hover {
+	background-color:#0076D7;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#090C1E;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+a:hover {
+	color:black;
+	background-color:#FFF9CE;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Nav End */
+section {
+	background-color:#FFD5A7;
+	width:650px;
+	float:left;
+	padding:5px 5px 2px 5px;
+	line-height:22px;
+}
+
+section h1, section h2 {
+	text-align:center;
+	font-size:30px;
+	padding:5px 0 10px 0;
+	line-height:35px;
+}
+
+section span {
+	font-size:20px;
+}
+
+aside {
+	background-color:#606CAA;
+	width:345px;
+	margin-left:655px;
+	text-align:center;
+}
+aside div {
+	text-align:start;
+}
+
+article {
+	background-color:#FFD5A7;
+	width:650px;
+	float:left;
+	padding:0 5px 2px 5px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	line-height:25px;
+}
+
+footer {
+	background-color:#F8E87D;
+	clear:both;
+}
+
+footer p {
+	float:right;
+	padding-right:5px;
+}
+
+.input_text {
+	margin: 0 0 10px 10px;
+	width:150px;
+}
+
+.submit_button {
+	margin: 0 0 10px 120px;
+	width:100px;
+}
+
+label {
+	/*float:left;*/
+	margin-left:40px;
+	width:85px;
+}
+
+input:required:invalid {
+	border:2px solid red;
+}
+
+.extra_input {
+	display:none;	
+}
+
+.thanksSection {
+	height: 300px;
+}
+
+#google-maps-display {
+	height:100%;
+	width:100%;
+	max-width:100%;
+}
+
+#google-maps display img {
+	max-width:none!important;
+	background:none!important;
+	font-size:inherit;
+}
+
+#maps-stuff {
+	width:700px;
+	overflow:hidden;
+	height:500px;
+	max-width:100%;
+}
