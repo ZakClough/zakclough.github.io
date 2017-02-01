@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'COUTUREBold';
+    font-weight: bold; 
+    font-style: normal;
+    color:cornflowerblue;
+	vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+}
+#title {
+    font-family: 'COUTUREBold'; 
+    font-weight: bold; 
+    font-style: normal;
+    font-size: 5em;
+    text-align: center;
+    color:cornflowerblue;
+    letter-spacing: 30px;
+}
+header {
+    background-color:white;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.bottom {
+    background-color:white;
+    margin: 27px 0 27px 0;
+    height: 300px;
+    width:100%;
+    float:right;
+}
+.lowRow {
+    margin-bottom: 27px;
+}
+.cloud {
+    background-color:white;
+    width:49%;
+    height: 300px;
+    margin-top: 27px;
+}
+.bigCloud {
+    background-color:white;
+    width:48.5%;
+    height: 700px;
+}
+.midCloud {
+    background-color:white;
+    width:49%;
+    height: 400px;
+    margin-top: 27px;
+}
+.centerTitle {
+    margin: auto;
+    text-align: center;
+    vertical-align:center;
+    height: 300px;
+    line-height: 300px;
+    font-size: 2.4em;
+}
+.centerText {
+    margin: auto;
+    text-align: center;
+    font-size: 2.6em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+body {
+    background-color:cornflowerblue;
+}
+#test {
+    padding:27px;
+}
+p {
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+img {
+    height:170px;
+}
+.mainText {
+    font-size: 22px;
+}
+#about {
+    height:400px;
+}
+.button {
+    width: 30%;
+    background-color: white;
+    margin-top:10px;
+    height: 50px;
+}
+.buttonText {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    
+}
+.centerTextSmall {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.example {
+    height:220px;
+}
+.example1 {
+    height:220px;
+    width:400px;
+}
+.cloud1 {
+    background-color:white;
+    width:49%;
+    height: 340px;
+    margin-top: 27px; 
+}
+.work {
+    width:270px;
+    height:180px;
+}
+.workCloud {
+    background-color:white;
+    width:49%;
+    height: 450px;
+    margin-top: 27px;
+}
+.workCloud1 {
+    background-color:white;
+    width:49%;
+    height: 560px;
+    margin-top: 27px;
+}
+.workCloud2 {
+    background-color:white;
+    width:49%;
+    height: 470px;
+    margin-top: 27px;
+}
+.top {
+    margin-top:0px;
+}
+.banner {
+    background-color:white;
+    height: 50px;
+    width:100%;
+    float:right;
+}
+.bannerCenter {
+    margin: auto;
+    text-align: center;
+    vertical-align:center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+}
+@media screen and (min-width: 1920px) {
+    .centerTitle {
+        font-size: 4.5em; 
+    }
+    #title {
+        font-size: 6em;
+        letter-spacing: 40px; 
+    }
+    #about {
+        height:550px;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .centerTitle {
+        font-size: 4.1em;
+    }
+    #title {
+        font-size: 5.8em;
+        letter-spacing: 36px; 
+    }
+}
+@media screen and (min-width: 958px) {
+    .cloud {
+        width:48.5%;
+    }
+    #about {
+        height:550px;
+    }
+}
+@media screen and (max-width: 798px) {
+    #about {
+        height:400px;
+    }
+    .centerTitle {
+        font-size:2.1em;
+    }
+    .example1 {
+        height:200px;
+        width:320px;
+    }
+    .button {
+        width: 37%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .workCloud {
+        height:350px;
+    }
+    .workCloud1 {
+        height:410px;
+    }
+    .workCloud2 {
+        height:370px;
+    }
+}
